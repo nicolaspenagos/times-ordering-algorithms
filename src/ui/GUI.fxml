@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
+   <children>
+      <Label layoutX="83.0" layoutY="8.0" prefHeight="58.0" prefWidth="560.0" text="TIEMPOS EN ALGORITMOS ">
+         <font>
+            <Font name="CamingoCode Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="86.0" layoutX="85.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="418.0" />
+      <Label layoutX="117.0" layoutY="108.0" text="Generar arreglo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="49.0" prefHeight="58.0" prefWidth="560.0" text="DE ORDENAMIENTO ">
+         <font>
+            <Font name="CamingoCode Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtF1" layoutX="222.0" layoutY="139.0" prefHeight="25.0" prefWidth="124.0" />
+      <Label layoutX="158.0" layoutY="141.0" text="Tamaño:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="365.0" layoutY="139.0" mnemonicParsing="false" onAction="#generate" prefHeight="25.0" prefWidth="84.0" text="Generar" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="197.0" layoutX="85.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="418.0" />
+      <ComboBox layoutX="363.0" layoutY="235.0" prefHeight="25.0" prefWidth="124.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="Option5" fx:value="Selección" />
+               <String fx:id="Option6" fx:value="Inserción" />
+               <String fx:id="Option7" fx:value="Burbuja" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="362.0" layoutY="198.0" text="Método de " />
+      <Label layoutX="363.0" layoutY="213.0" text="ordenamiento:" />
+      <Button layoutX="367.0" layoutY="272.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="124.0" text="Ordenar" />
+      <TextArea fx:id="textFA" layoutX="91.0" layoutY="198.0" prefHeight="187.0" prefWidth="247.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="364.0" layoutY="346.0" stroke="BLACK" strokeType="INSIDE" width="124.0" />
+      <Label layoutX="367.0" layoutY="325.0" text="Tiempo:" />
+      <Label fx:id="time" layoutX="369.0" layoutY="350.0" prefHeight="17.0" prefWidth="111.0" />
+   </children>
+</Pane>
